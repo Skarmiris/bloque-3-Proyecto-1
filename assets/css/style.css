@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/*------------------------------------------------------------------------*/
+p {
+    margin: 5px;
+}
+
+h3 {
+    /*indique su cantidad*/
+    margin: 3px;
+}
+/*------------------------------------------------------------------------*/
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "a a a"
+        "r c t"
+        "b b b";
+}
+
+.relleno {
+    grid-area: a;
+}
+.relleno {
+    grid-area: r;
+}
+.relleno {
+    grid-area: b;
+}
+
+/*------------------------------------------------------------------------*/
+/* div que contiene las 2 cajas para el resultado final de la compra */
+.caja-total {
+    grid-area: t;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #92fa4c00;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+
+.caja-total2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid #6b43b4ec;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 50%;
+}
+
+.caja3color {
+    display: flex;
+}
+
+#circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: solid 0.5px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+/*-----------------------card y todo su contenido---------------------------------*/
+.cards {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid #bdbcbcec;
+    border-radius: 5px;
+    width: auto;
+    height: 96%;
+    background-color: #65f8e0;
+    background-image: linear-gradient(315deg, #2f70ac 0%, #9213b9 74%);
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #494949ec;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.texto-card {
+    display: flex;
+    justify-content: center;
+}
+/*--------BOTON--------*/
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #00418b;
+    background-image: linear-gradient(314deg, #5170d4 0%, #6f45919d 74%);
+}
+
+#resultadoTotal {
+    width: 100%;
+    height: 100%;
+}
+
+.caja1cantidad {
+    display: flex;
+    border-style: none;
+}
+
+.caja2cantidad {
+    display: flex;
+}

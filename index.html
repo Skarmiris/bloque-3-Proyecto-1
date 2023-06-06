@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="./assets/style/normalize.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <main class="grid-container x">
+        <div class="relleno">
+        </div>
+        <!-----------------------------------CARD--------------------------------------------->
+        <div class="cards"><!--inico de cards-->
+            <div class="card-img">
+                <img src="./assets/imagen/notebook.png" alt="viu-1" class="imagen">
+            </div>
+            <h2>Notebook</h2>
+            <div>
+                <h3>indique su cantidad</h3>
+                <input type="number" id="cantidadInput" value="0" min="0">
+            </div>
+            <input type="color" id="colorInput">
+            <p>
+                Precio: <span type="number" id="precioInput" value="400000" min="400000">400000</span>
+            </p>
+            <button class="boton" id="presBoton">
+                Calcular total
+            </button>
+
+        </div>
+        <!-----------------------------total--------------------------------------->
+        <div class="caja-total"><!--result-->
+            <div class="caja-total2">
+                <div class="caja1cantidad">
+                    <p>Total: </p>
+                    <div id="resultadoTotal"></div>
+                </div>
+                <div class="caja2cantidad">
+                    <p>Cantidad: </p>
+                    <input type="number" id="precioInput" value="0" min="0">
+                </div>
+                <div class="caja3color">
+                    <p>Color: </p>
+                    <div id="circle"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/ejercicios-con.js"></script>
+</body>
+
+</html>

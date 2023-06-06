@@ -2,8 +2,9 @@
 //-------------precio-y-cantidad
 let cantidadInput = document.getElementById("cantidadInput");
 let precioInput = document.getElementById("precioInput");
-let calcularBtn = document.getElementById("calcularBtn");
-let resultadoTotal = document.getElementById("resultadoTotal");
+let cantidadResultado = document.getElementById("cantidadResultado");
+let precioResultado = document.getElementById("precioResultado");
+let totalResultado = document.getElementById("totalResultado");
 //---------------color
 let colorInput = document.querySelector('#colorInput');
 let cambiarColorBtn = document.querySelector('#cambiarColorBtn');
@@ -16,10 +17,17 @@ let indiqueCantidad = document.querySelector('#indiqueCantidad');
 
 
 presBoton.addEventListener("click", () => {
+    //----------precio y carro
+    let cantidad = parseInt(cantidadInput.value);
+    let precio = 400000;
+    let total = cantidad * precio;
+
+    cantidadResultado.textContent = cantidad;
+    precioResultado.textContent = precio;
+    totalResultado.textContent = total;
     //---------color
     cambiarColorBtn = document.querySelector('cambiarColorBtn')
-    let colorElegido = colorInput.value;
+    const colorElegido = colorInput.value;
     circle.style.backgroundColor = colorElegido;
-    //---------fin color
-    console.log(indiqueCantidad);
+    //---------fin color 
 });

@@ -13,9 +13,10 @@
 <body>
 
     <main class="grid-container x">
+
         <div class="relleno">
         </div>
-        <!-----------------------------------CARD--------------------------------------------->
+        <!-----------------------------------CARD-------------------------->
         <div class="cards"><!--inico de cards-->
             <div class="card-img">
                 <img src="./assets/imagen/notebook.png" alt="viu-1" class="imagen">
@@ -27,30 +28,28 @@
             </div>
             <input type="color" id="colorInput">
             <p>
-                Precio: <span type="number" id="precioInput" value="400000" min="400000">400000</span>
+                Precio: <span id="precioResultado"></span><!--!-->
             </p>
             <button class="boton" id="presBoton">
                 Calcular total
             </button>
-
         </div>
-        <!-----------------------------total--------------------------------------->
-        <div class="caja-total"><!--result-->
+        <!-----------------------------CAJA RESULTADOS------------------------------------------------------------------->
+        <div class="caja-total">
             <div class="caja-total2">
                 <div class="caja1cantidad">
-                    <p>Total: </p>
-                    <div id="resultadoTotal"></div>
+                    <p>Total a pagar: $<span id="totalResultado">0</span></p>
                 </div>
                 <div class="caja2cantidad">
-                    <p>Cantidad: </p>
-                    <input type="number" id="precioInput" value="0" min="0">
+                    <p>Cantidad: <span id="cantidadResultado">0</span></p>
                 </div>
-                <div class="caja3color">
+                <div class="caja3color"><!--por el momento inutil-->
                     <p>Color: </p>
                     <div id="circle"></div>
                 </div>
             </div>
         </div>
+
     </main>
 
     <script src="./assets/js/script.js"></script>

@@ -16,7 +16,7 @@ h3 {
 .grid-container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 0.7fr 0.7fr 0.7fr;
+    grid-template-columns: 0.7fr 0.4fr 0.7fr;
     grid-template-areas:
         "a a a"
         "r c t"
@@ -77,8 +77,8 @@ h3 {
     margin: 10px;
     border: 2px solid #bdbcbcec;
     border-radius: 5px;
-    width: 50vh;
-    height: 96%;
+    width: 45vh;
+    height: 90%;
     background-color: #65f8e0;
     background-image: linear-gradient(315deg, #2f70ac 0%, #9213b9 74%);
 }
@@ -96,15 +96,25 @@ h3 {
     display: flex;
     justify-content: center;
 }
-/*--------BOTON--------*/
+/*---------Producto---------*/
+.producto-cantidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#cantidadInput {
+    padding: 10px 40px; 
+    width: 70%;
+}
+/*-----------BOTON-----------*/
 .boton {
     display: flex;
     justify-content: center;
-}
-
-button {
+    padding: 10px 55px;
+    margin-bottom: 25px;
     background-color: #00418b;
-    background-image: linear-gradient(314deg, #5170d4 0%, #6f45919d 74%);
+    background-image: linear-gradient(314deg, #5cd1ff60 0%, #7e52a18f 74%);
 }
 
 #resultadoTotal {
